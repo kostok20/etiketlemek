@@ -37,12 +37,12 @@ async def start(event):
   await event.reply("**ᴇʀʀᴏʀ ᴛᴀɢɢᴇʀ**, Grup veya kanaldaki neredeyse tüm üyelerden bahsedebilirim ★\nDaha fazla bilgi için **/bilgi**'i tıklayın.",
                     buttons=(
                       [
-                         Button.url('➕ BENİ GRUBA EKLE ➕ ', 'http://t.me/ErrorTagger_Bot?startgroup=a')
+                         Button.url('➕ BENİ GRUBA EKLE ➕ ', 'http://t.me/BugsBunyEtiket_bot?startgroup=a')
                       ],
                       [
-                         Button.url('📣 Grubumuz', 'https://t.me/supppeerrt'),
-                         Button.url('👨🏼‍💻Developer', 'https://t.me/SakirBey2'),
-                         Button.url('👮Sahibim', 'https://t.me/ozuduqaqaw'),
+                         Button.url('📣 Grubumuz', 'https://t.me/kostok20'),
+                         Button.url('👨🏼‍💻Developer', 'https://t.me/kostok20'),
+                         Button.url('👮Sahibim', 'https://t.me/kostok20'),
                       ]
                     ),
                     link_preview=False
@@ -53,12 +53,12 @@ async def help(event):
   await event.reply(helptext,
                     buttons=(
                       [
-                         Button.url('➕ BENİ GRUBA EKLE ➕', 'http://t.me/ErrorTagger_Bot?startgroup=a')
+                         Button.url('➕ BENİ GRUBA EKLE ➕', 'http://t.me/BugsBunyEtiket_bot?startgroup=a')
                       ],
                       [
-                         Button.url('📣 Grubumuz', 'https://t.me/supppeerrt'),
-                         Button.url('👨🏼‍💻Developer', 'https://t.me/SakirBey2'),
-                         Button.url('👮Sahibim', 'https://t.me/ozuduqaqaw'),
+                         Button.url('📣 Grubumuz', 'https://t.me/kostok20'),
+                         Button.url('👨🏼‍💻Developer', 'https://t.me/kostok20'),
+                         Button.url('👮Sahibim', 'https://t.me/kostok20'),
                       ]
                     ),
                     link_preview=False
@@ -263,9 +263,9 @@ async def mentionall(event):
     mode = "text_on_reply"
     msg = event.reply_to_msg_id
     if msg == None:
-        return await event.respond("**önceki mesajı etiketleye bilmerim*")
+        return await event.respond("**önceki mesajı etiketleyemem*")
   elif event.pattern_match.group(1) and event.reply_to_msg_id:
-    return await event.respond("Başlamaq için Sebeb Yazın❗️")
+    return await event.respond("Başlamak için Sebep Yazın❗️")
   else:
     return await event.respond("**Işleme başlamağım için sebeb yazın..**")
   
@@ -277,7 +277,7 @@ async def mentionall(event):
       usrnum += 1
       usrtxt += f"**[{usr.first_name}](tg://user?id={usr.id})**"
       if event.chat_id not in tekli_calisan:
-        await event.respond("**Işlem Başarıyla Durduruldu\n\n**Buda sizin reklamınız ola bilir @SakirBey2**❌****")
+        await event.respond("**Işlem Başarıyla Durduruldu\n\n**Buda sizin reklamınız ola bilir @kostok20**❌****")
         return
       if usrnum == 1:
         await client.send_message(event.chat_id, f"{usrtxt} {msg}")
@@ -295,7 +295,7 @@ async def mentionall(event):
       usrnum += 1
       usrtxt += f"[{usr.first_name}](tg://user?id={usr.id})"
       if event.chat_id not in tekli_calisan:
-        await event.respond("Işlem Başarıyla Durduruldu\n\n**Buda sizin reklamınız ola bilir @SakirBey2**❌**")
+        await event.respond("Işlem Başarıyla Durduruldu\n\n**Buda sizin reklamınız ola bilir @kostok20**❌**")
         return
       if usrnum == 1:
         await client.send_message(event.chat_id, usrtxt, reply_to=msg)
@@ -303,5 +303,5 @@ async def mentionall(event):
         usrnum = 0
         usrtxt = ""
 
-print(">> Bot çalıyor merak etme 🚀 @SakirBey1 bilgi alabilirsin <<")
+print(">> Bot çalıyor merak etme 🚀 @kostok20 bilgi alabilirsin <<")
 client.run_until_disconnected()
